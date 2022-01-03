@@ -51,9 +51,8 @@ Temps passé dans la simulation par pas de temps:
 
 	Bilan:
 
-En analysant les résultats on voit déjà que plus on augmente la taille de la population, plus on observe de meilleurs performance (speedup plus élevé). Pour l'étape 3 simulation et affichage en asynchrone, l'accélération est plus importante si on prend un nombre d'invidus plus grand.
-A travers j'ai mieux compris l'utilité de la programmation parallèle. D'un code séquentiel sur une seule machine, on
+	En analysant les résultats on voit déjà que plus on augmente la taille de la population, plus on observe de meilleurs performances (speedup plus élevé). Pour l'étape 3 simulation et affichage en asynchrone, l'accélération est plus importante si on prend un nombre d'invidus plus grand.
+A travers ce projet, j'ai mieux compris l'utilité de la programmation parallèle. D'un code séquentiel sur une seule machine, on
 peut parvenir à distribuer le travail sur plusieurs processus en parallèle voir sur plusieurs machines distinctes; 
-et cela avec un gain de performance.
-J'ai également chercher à connaitre les composants de mon ordinateur. Cependant j'ai l'impression qu'avec le WSL que j'ai utilisé pour mon projet, les résultats étaient parfois un peu entachés d'incohérences. En effet, d'un jour à l'autre je pouvais avoir des accélérations différentes. 
-Ce projet m'a poussé à visiter plusieurs forums sur la programation parallèle et j'ai pris conscience de la communanauté et de quelques applications.
+et cela avec un gain de performance. Cependant on doit bien comprendre le programme qu'on veut paralléliser sinon on risque de faire des parallélisations inutiles sans gain de performances.
+	J'ai également chercher à connaitre les composants de mon ordinateur parceque cela était nécessaire pour mieux faire la parallélisation. Cependant j'ai eu l'impression qu'avec le WSL que j'ai utilisé pour mon projet, les résultats étaient parfois un peu entachés d'incohérences. En effet, d'un jour à l'autre je pouvais avoir des accélérations différentes. Ce projet m'a demandé beaucoup de temps, m'a poussé à visiter plusieurs forums sur la programation parallèle et j'ai pris conscience de la communanauté et de plusieurs applications.
