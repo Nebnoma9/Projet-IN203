@@ -5,6 +5,8 @@ Temps passé dans la simulation par pas de temps :
 Temps passé à l’affichage par pas de temps : 0.07
 On constate que le temps d’affichage vaut 2.3 fois le temps de simulation et le temps passé dans un pas de temps est bien la somme du temps de simulation et le temps d’affichage.
 
+
+
 	Etape 2: simulation_sync_affiche_mpi.cpp
 Temps passé: dans la simulation par pas de temps dans le processus de simulation :
 -	0.04071328
@@ -15,6 +17,9 @@ communication en message bloquant qui s'ajoute.
 Temps passé: dans la simulation par pas de temps dans le processus de simulation :
 -	0.0280639
 On constate un speedup de 1,45 qui est compréhensible. En effet la communication se fait maintenant par message non bloquant, ce qui permet aux processus de travailler sans s'arreter ce qui permet le gain de temps.
+
+
+
 
 	Etape 4 : simulation_async_omp.cpp
 Temps passé: dans la simulation par pas de temps dans le processus de simulation :
@@ -33,6 +38,9 @@ Avec 2 threads dans les boucles "for" de màjStatistique() et 2 thread dans la b
 -	Avec 10 threads dans maj, resultats differents
 -	0.0310295 (10 10 1)
 On constate une accélaration avec un nombre de threads croissant. Mais à partir de 10 threads on perd en performance.
+
+
+
 
 	Etape 5 : simulation_async_mpi.cpp
 -	0.0270652
